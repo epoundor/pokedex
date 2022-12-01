@@ -6,6 +6,7 @@
     <span class="text-end flex-1 text-xs mt-1 mx-2">#{{ id }}</span>
     <img
       class="object-fill object-center h-[72px]"
+      loading="lazy"
       :src="
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/' +
         id +

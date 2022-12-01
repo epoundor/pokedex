@@ -27,7 +27,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const pokemons: any = ref([]);
 function fetchKantoPokemon() {
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=21")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
     .then((response) => response.json())
     .then((allpokemon) => {
       pokemons.value = allpokemon.results;
